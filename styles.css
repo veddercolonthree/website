@@ -1,0 +1,283 @@
+@font-face {
+    font-family: JuliaMono;
+    src: url(fonts/JuliaMono-Regular.ttf);
+}
+:root{
+    --border: #000000;
+    --textColor: #383838;
+    --defaultBG: #e5e5e5;
+    --buttonBG: #c1c1c1;
+    --buttonBGActive: #959595;
+    --buttonBorder: #a6a6a6;
+    --buttonBorderActive: #757575;
+    --dull: #c5c5c5;
+}
+body{
+    line-height: 1.5;
+    font-family: JuliaMono;
+    font-size: 1em;
+    color: var(--textColor);
+    background-image: url(images/background.png);
+    background-size: 8%;
+}
+hr{
+    width: 90%;
+    color: var(--textColor);
+}
+#main{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+}
+.boxes{
+    margin: 7px;
+    padding: 8px;
+    border: 3px solid var(--border);
+    background-color: var(--defaultBG);
+}
+.innerBoxes{
+    margin: 7px;
+    border: 2px solid var(--border);
+}
+#banner{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 14px;
+    height: 200px;
+    background-image: url(images/fish.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+}
+.navButton{
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 1%;
+    background-color: var(--buttonBG);
+    border: 2px solid var(--buttonBorder);
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.navButton:hover{
+    background-color: var(--buttonBGActive);
+    border-color: var(--buttonBorderActive);
+}
+#active{
+    background-color: var(--buttonBGActive);
+    border-color: var(--buttonBorderActive);
+}
+.split{
+    display: flex;
+    width: 100%;
+}
+#left{
+    flex: 1;
+    order: 1;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+}
+#right{
+    flex: 2;
+    order: 2;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+}
+#guestbook{
+    height: 360px;
+}
+#friendsList{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.friend{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.friendPFP{
+    width: 125px;
+    border-radius: 10px;
+    
+}
+#mainStuff{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+}
+.songs{
+    display: flex;
+    margin-bottom: 10px;
+}
+.albumPlayer{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: var(--dull);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.albums{
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.musicInfo{
+    width: 100%;
+}
+.buttonIcon{
+    width: 30px;
+    vertical-align: middle;
+    padding: 5px;
+}
+.buttonIcon{
+    width: 20px;
+}
+.playBtn, .pauseBtn{
+    border: 2px solid var(--buttonBorder);
+    background-color: #e3e3e3;
+    border-radius: 4px;
+}
+.playBtn:hover, .pauseBtn:hover{
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--buttonBorderActive);
+    background-color: #cfcfcf;
+}
+.game{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#gameList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game img{
+    width: 120px;
+    border-radius: 10px;
+}
+.game p{
+    margin-top: 0;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#links img{
+    width: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#links a{
+    text-decoration: none;
+}
+
+@media(min-width: 1200px) and (max-width: 1780px){
+    .split{
+        display: flex;
+        flex-direction: column;
+    }
+    #left{
+        order: 2;
+    }
+    #right{
+        order: 1;
+    }
+
+}
+@media(min-width: 860px) and (max-width: 1200px){
+    #main{
+        width: 90%;
+    }
+    .split{
+        display: flex;
+        flex-direction: column;
+    }
+    .navButton{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #left{
+        order: 2;
+    }
+    #right{
+        order: 1;
+    }
+    #guestbook{
+        height: 300px;
+    }
+    .songs{
+        flex-wrap: wrap;
+    }
+    .albumPlayer{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 860px){
+    #main{
+        width: 90%;
+    }
+    .split{
+        display: flex;
+        flex-direction: column;
+    }
+    #navigation{
+        flex-wrap: wrap;
+    }
+    .navButton{
+        width: 3em;
+        margin: 0.5em;
+    }
+    #left{
+        order: 2;
+    }
+    #right{
+        order: 1;
+    }
+    #guestbook{
+        height: 300px;
+    }
+    #friendsList{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .friend{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 15px;
+    }
+    .friendPFP{
+        width: 135px;
+    }
+    #banner{
+        height: 200px;
+        background-image: url(images/fish.png);
+        background-position: center;
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+    .songs{
+        flex-wrap: wrap;
+    }
+    .albumPlayer{
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    .friendPFP{
+        width: 100px;
+    }
+}
