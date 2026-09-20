@@ -1,0 +1,27 @@
+@font-face{
+    font-family:"JuliaMono";
+    src: url("fonts/JuliaMono-Regular.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: "JuliaMono", monospace;
+    background-color: #5099ce;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/cloudBackground.jpg');
+    background-size: cover;
+    background-position: 100% calc(100% - 50%);
+}
+
+#mainContent{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ @media screen and (min-width: 721px) {
+  #mainContent{
+    scale: 1.4;
+  }
+}
