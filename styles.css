@@ -3,25 +3,50 @@
     src: url("fonts/JuliaMono-Regular.ttf");
 }
 
+@font-face {
+    font-family: "w95f";
+    src: url("fonts/W95F.otf");
+}
+
+:root{
+    overscroll-behavior: none;
+    background: url('images/cloudBackground.jpg');
+    background-size: cover;
+    background-position: 100% 15%;
+    min-height: 100%;
+}
+
 body{
     margin: 0;
     font-family: "JuliaMono", monospace;
-    background-color: #5099ce;
-    width: 100vw;
-    height: 100vh;
-    background: url('images/cloudBackground.jpg');
-    background-size: cover;
-    background-position: 100% calc(100% - 50%);
+    font-size: 1.5rem;
 }
 
 #mainContent{
-    width: 600px;
     margin: 0 auto;
     text-align: center;
 }
 
+.dialogueBox{
+    margin: 0 auto;
+    background-color: #bfb8bf;
+    display: inline-block;
+    font-family: "w95f", monospace;
+    width: 300px;
+    
+    /* border-top: 2px solid #efeaef;
+    border-left: 2px solid #efeaef;
+    border-bottom: 3px solid #7f787f;
+    border-right: 3px solid #7f787f; */
+}
+
+.blueHeader{
+    background-color: #00007f;
+    padding-top: 0;
+}
+
  @media screen and (min-width: 721px) {
-  #mainContent{
-    scale: 1.4;
-  }
+    #mainContent{
+        
+    }
 }
