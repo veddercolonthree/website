@@ -19,7 +19,7 @@
 body{
     margin: 0;
     font-family: "JuliaMono", monospace;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 #mainContent{
@@ -27,26 +27,92 @@ body{
     text-align: center;
 }
 
-.dialogueBox{
+.dialogBox{
     margin: 0 auto;
     background-color: #bfb8bf;
     display: inline-block;
     font-family: "w95f", monospace;
+    text-align: left;
+    font-size: 16px;
     width: 300px;
-    
-    /* border-top: 2px solid #efeaef;
-    border-left: 2px solid #efeaef;
+    min-height: 100px;
+    /* border */
+    border-top: 3px solid #efeaef;
+    border-left: 3px solid #efeaef;
     border-bottom: 3px solid #7f787f;
-    border-right: 3px solid #7f787f; */
+    border-right: 3px solid #7f787f;
+    /* actual shadow */
+    box-shadow: -7px 4px 5px #323232;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.dialogBox:hover {
+    box-shadow: -3px 1px 5px #323232;
 }
 
 .blueHeader{
     background-color: #00007f;
-    padding-top: 0;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 5px 2px 5px;
 }
 
+.blueHeader p{
+    margin: 0;
+}
+
+.blueHeader img{
+    float: right;
+    image-rendering: pixelated;
+    width: 20%;
+    height: 20%;
+    padding-top: 1px;
+}
+
+.okButton {
+    background-color: #bfb8bf;
+    font-family: "w95f", monospace;
+    text-align: left;
+    font-size: 16px;
+    width: 100px;
+    min-height: 10px;
+    /* border */
+    border-top: 3px solid #efeaef;
+    border-left: 3px solid #efeaef;
+    border-bottom: 3px solid #7f787f;
+    border-right: 3px solid #7f787f;
+    text-align: center;
+    margin: 13px auto 10px auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+.okButton p {
+    margin: 5px 0px 5px 0px;
+}
+
+.okButton:hover {
+    filter: brightness(0.9);
+}
+
+.dialogBoxContent {
+    display: flex;
+    align-items: center;
+    padding: 7px 0px 0px 5px;
+}
+
+.dialogBoxContent p {
+    float: right;
+}
+
+.dialogBoxContent img {
+    image-rendering: pixelated;
+    padding-right: 6px;
+}
+
+
+
  @media screen and (min-width: 721px) {
-    #mainContent{
-        
-    }
+    
 }

@@ -1,5 +1,3 @@
-# hi
-this is literally just my personal about me site, nothing cool.
-
-note:
-my css and js is terrible
+# my personal website
+hii, this is just my about me site, literally nothing cool :/
+this is mostly for practice, my css and javascript are butt
