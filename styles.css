@@ -1,5 +1,5 @@
-@font-face{
-    font-family:"JuliaMono";
+@font-face {
+    font-family: "JuliaMono";
     src: url("fonts/JuliaMono-Regular.ttf");
 }
 
@@ -8,26 +8,26 @@
     src: url("fonts/W95F.otf");
 }
 
-:root{
+:root {
     overscroll-behavior: none;
-    background: url('images/cloudBackground.jpg');
+    background: url("images/cloudBackground.jpg");
     background-size: cover;
     background-position: 100% 15%;
     min-height: 100%;
 }
 
-body{
+body {
     margin: 0;
     font-family: "JuliaMono", monospace;
     font-size: 24px;
 }
 
-#mainContent{
+#mainContent {
     margin: 0 auto;
     text-align: center;
 }
 
-.dialogBox{
+.dialogBox {
     margin: 0 auto;
     background-color: #bfb8bf;
     display: inline-block;
@@ -50,7 +50,7 @@ body{
     box-shadow: -3px 1px 5px #323232;
 }
 
-.blueHeader{
+.blueHeader {
     background-color: #00007f;
     color: #fff;
     font-size: 20px;
@@ -59,16 +59,16 @@ body{
     padding: 4px 5px 2px 5px;
 }
 
-.blueHeader p{
+.blueHeader p {
     margin: 0;
 }
 
-.blueHeader img{
+.blueHeader img {
     float: right;
     image-rendering: pixelated;
     width: 20%;
     height: 20%;
-    padding-top: 1px;
+    padding-top: 3px;
 }
 
 .okButton {
@@ -116,22 +116,38 @@ body{
     padding-right: 6px;
 }
 
-#about{
-
+#about {
+    position: absolute;
+    top: 125px;
+    left: calc(100% - 50vw - 330px);
 }
 
-#music{
-
+#music {
+    position: absolute;
+    top: 168px;
+    left: calc(100% - 50vw - 0px);
 }
 
-#games{
-
+#games {
+    position: absolute;
+    top: 325px;
+    left: calc(100% - 50vw - 345px);
 }
 
-#links{
-
+#links {
+    position: absolute;
+    top: 350px;
+    left: calc(100% - 50vw - 15px);
 }
 
- @media screen and (min-width: 721px) {
-    
+@media (max-width: 600px) {
+    #about,
+    #music,
+    #games,
+    #links {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 20px;
+    }
 }
