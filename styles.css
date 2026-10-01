@@ -10,9 +10,6 @@
 
 :root {
     overscroll-behavior: none;
-    background: url("images/cloudBackground.jpg");
-    background-size: cover;
-    background-position: 100% 15%;
     min-height: 100%;
 }
 
@@ -25,6 +22,30 @@ body {
 #mainContent {
     margin: 0 auto;
     text-align: center;
+}
+
+#index {
+    background-image: url("backgrounds/cloudBackground.jpg");
+    background-size: cover;
+    background-position: 100% 15%;
+}
+
+#about {
+    background-image: url("backgrounds/underwater.png");
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+#music {
+    
+}
+
+#games {
+    
+}
+
+#links {
+    
 }
 
 .dialogBox {
@@ -68,7 +89,7 @@ body {
     image-rendering: pixelated;
     width: 20%;
     height: 20%;
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 .okButton {
@@ -116,35 +137,36 @@ body {
     padding-right: 6px;
 }
 
-#about {
+#aboutDialogBox {
+    background-image: url("images/underwater.jpg");
     position: absolute;
     top: 125px;
     left: calc(100% - 50vw - 330px);
 }
 
-#music {
+#musicDialogBox {
     position: absolute;
     top: 168px;
     left: calc(100% - 50vw - 0px);
 }
 
-#games {
+#gamesDialogBox {
     position: absolute;
     top: 325px;
     left: calc(100% - 50vw - 345px);
 }
 
-#links {
+#linksDialogBox {
     position: absolute;
     top: 350px;
     left: calc(100% - 50vw - 15px);
 }
 
 @media (max-width: 600px) {
-    #about,
-    #music,
-    #games,
-    #links {
+    #aboutDialogBox,
+    #musicDialogBox,
+    #gamesDialogBox,
+    #linksDialogBox {
         position: relative;
         top: 0px;
         left: 0px;
