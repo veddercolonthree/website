@@ -1,3 +1,4 @@
 # my personal website
-hii, this is just my about me site, literally nothing cool :/
-this is mostly for practice, my css and javascript are butt
+hi, im vedder, this is my about site :D
+
+it is pretty cool! ignore how bad all my html, css, and js are
