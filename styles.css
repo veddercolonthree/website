@@ -192,7 +192,14 @@ body {
     flex: 1;  
 }
 
-@media screen and (max-width: 600px) {
+#atabook{
+    height: 100%;
+    width: 100%;
+    display: block; 
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
     #aboutDialogBox,
     #musicDialogBox,
     #gamesDialogBox,
@@ -214,6 +221,16 @@ body {
     }
 
     .split > * iframe {
+        flex: 0;
         height: 400px;
+    }
+
+    #aboutDialogBox {
+        position: static;
+        background-size: auto;
+    }
+
+    #atabook{
+        height: 500px;
     }
 }
