@@ -6,6 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body id="music">
+        <h1 id="musicTitle"> music i enjoy </h1>
+        
+        <div style="display: flex; justify-content: center;">
+            <img id="albumCover">
+            <img id="vinylTemplate" src="images/albumCovers/fullVinylTemplate.png">
+        </div>
 
+        <div id="songDisplay">
+            <button style="float: left;" onclick="previousSong();"> < </button>
+            <div id="songInfo">
+                <p id="songTitle"> songName </p>
+                <p id="songArtist"> artistName </p>
+            </div>
+            <button style="float: right;" onclick="nextSong();"> > </button>
+        </div>
+        <script src="musicSwitcher/albumCoverChange.js"></script>
+        
+
+        
     </body>
 </html>

@@ -1,0 +1,100 @@
+[
+    {
+        "number": 0,
+        "name": "String me",
+        "artist": "Jane Remover",
+        "albumCover": "images/albumCovers/indieRock.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 1,
+        "name": "bonk",
+        "artist": "saturn",
+        "albumCover": "images/albumCovers/bonkSaturn.png",
+        "link_to_song": "" 
+    },
+    {
+        "number": 2,
+        "name": "titles",
+        "artist": "twikipedia, funeral",
+        "albumCover": "images/albumCovers/titlesTwikipedia.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 3,
+        "name": "letz 5hake",
+        "artist": "saturn",
+        "albumCover": "images/albumCovers/lets5hakeSaturn.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 4,
+        "name": "U wld never do it",
+        "artist": "kuru",
+        "albumCover": "images/albumCovers/backstageHologramKuru.png",
+        "link_to_song": "" 
+    },
+    {
+        "number": 5,
+        "name": "nunca mais",
+        "artist": "D2LTA",
+        "albumCover": "images/albumCovers/nuncaMaisDelta.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 6,
+        "name": "Linoleum",
+        "artist": "kmoe",
+        "albumCover": "images/albumCovers/linoleumKmoe.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 7,
+        "name": "Music",
+        "artist": "underscores",
+        "albumCover": "images/albumCovers/uUnderscores.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 8,
+        "name": "Fling",
+        "artist": "Jane Remover",
+        "albumCover": "images/albumCovers/censusDesignatedJaneRemover.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 9,
+        "name": "Things That Rhyme With Orange",
+        "artist": "I Set My Friends On Fire",
+        "albumCover": "images/albumCovers/ycsswolISMFOF.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 10,
+        "name": "27",
+        "artist": "Title Fight",
+        "albumCover": "images/albumCovers/shedTitleFight.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 11,
+        "name": "Secret Society",
+        "artist": "Title Fight",
+        "albumCover": "images/albumCovers/floralGreenTitleFight.png",
+        "link_to_song": "" 
+    },
+    {
+        "number": 12,
+        "name": "Teenage Robot",
+        "artist": "Jane Remover",
+        "albumCover": "images/albumCovers/teenageRobotJaneRemover.jpg",
+        "link_to_song": "" 
+    },
+    {
+        "number": 13,
+        "name": "Delete",
+        "artist": "Ninajirachi",
+        "albumCover": "images/albumCovers/iLoveMyComputerNinajirachi.jpg",
+        "link_to_song": "" 
+    }
+]
