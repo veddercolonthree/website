@@ -213,6 +213,12 @@ body {
     width: 150px;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.friend img:hover{
+    transform: rotate(360deg);
+    transition-delay: 250ms;
 }
 
 .friend p{
@@ -304,12 +310,6 @@ body {
     font-size: 32px;
     text-shadow: -1px 1px 5px black;
     cursor: pointer;
-}
-
-#play{
-    filter: invert();
-    width: 20px;
-    text-shadow: -1px 1px 5px black;
 }
 
 @media screen and (max-width: 900px) {
