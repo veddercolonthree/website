@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body id="music">
-        <h1 id="musicTitle"> music i enjoy </h1>
+        <h1 id="musicTitle" style="margin-bottom: 10px;"> music i enjoy </h1>
+        <p id="musicTitle" style="margin-top: 10px;"> tap the record to play! </p>
         
         <div style="display: flex; justify-content: center;">
             <img id="albumCover">
-            <img id="vinylTemplate" src="images/albumCovers/fullVinylTemplate.png">
+            <div onclick="playing()" id="vinylContainer">
+                <img id="vinylTemplate" src="images/albumCovers/fullVinylTemplate.png">
+            </div>
         </div>
 
         <div id="songDisplay">
@@ -21,9 +24,17 @@
             </div>
             <button style="float: right;" onclick="nextSong();"> > </button>
         </div>
-        <script src="musicSwitcher/albumCoverChange.js"></script>
-        
 
-        
+        <div style="justify-content: center; display: flex;">
+            <img id="play" onclick="playPause()">
+        </div>
+
+        <br>
+        <div class="okButton">
+            <a href="index.html"> <p>< back</p> </a>
+        </div>
+
+        <script src="musicSwitcher/songControls.js"></script>
+        <audio id="musicPlayer" autoplay></audio>
     </body>
 </html>

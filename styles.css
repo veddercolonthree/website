@@ -233,21 +233,20 @@ body {
     text-shadow: -1px 1px 5px black;
 }
 
+#vinylContainer {
+    left: -12vw;
+    position: relative;
+}
+
 #vinylTemplate{
     height: 35vw;
-    position: relative;
-    left: -12vw;
-    transform: translateX(8.75vw);
-    z-index: -1;
-    animation: rotate 20s infinite linear;
+    z-index: 0;
+    pointer-events: none;
 }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);
@@ -259,6 +258,7 @@ body {
    height: 35vw;
    display: block;
    transform: translateX(17.5vw);
+   z-index: 1;
 }
 
 #songDisplay{
@@ -306,6 +306,12 @@ body {
     cursor: pointer;
 }
 
+#play{
+    filter: invert();
+    width: 20px;
+    text-shadow: -1px 1px 5px black;
+}
+
 @media screen and (max-width: 900px) {
     #aboutDialogBox,
     #musicDialogBox,
@@ -344,5 +350,23 @@ body {
 
     #atabook{
         height: 500px;
+    }
+
+    #albumCover{
+        width: 55vw;
+        height: 55vw;
+        transform: translateX(27.5vw);
+    }
+
+    #vinylTemplate{
+        height: 55vw;
+    }
+
+    #songTitle{
+        margin-top: 20px;
+    }
+
+    #songDisplay{
+        width: 90vw;
     }
 }
